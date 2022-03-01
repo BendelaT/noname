@@ -1,0 +1,249 @@
+body {
+  background-color: #f7f7f8 !important;
+  max-width: 1600px;
+  margin: 0 auto !important;
+  min-width: 280px;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #ffffff;
+  height: 60px;
+  align-items: center;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding-left: 40px;
+}
+#logo {
+  cursor: pointer;
+}
+.header_navigation {
+  display: flex;
+  color: #2e2d37;
+  font-family: var(--bs-body-font-family);
+  font-size: var(--bs-body-font-size);
+  padding: 10px 0 0 0;
+}
+#home {
+  color: #6c757d;
+}
+.header_navigation li {
+  margin-right: 30px;
+  color: var(--bs-body-color);
+  cursor: pointer;
+}
+.header_navigation li:hover {
+  color: #6c757d;
+}
+.close {
+  display: none;
+}
+.menu_phone {
+  display: none;
+}
+.menu_location {
+  display: none;
+}
+.favicon {
+  border: 1px solid #dfe0e7;
+  border-radius: 50%;
+  width: 38px;
+  height: 38px;
+  right: 50px;
+  position: relative;
+  cursor: pointer;
+}
+.favimg {
+  position: absolute;
+  width: 17px;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  top: 30%;
+}
+.favorites_count {
+  left: 26px;
+  top: -4px;
+  position: absolute;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  font-size: 12px;
+  font-family: sans-serif;
+
+  background-color: #6c757d;
+  padding-left: 15%;
+  color: #ffffff;
+}
+.burger_menu {
+  position: absolute;
+  display: none;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+.burger_menu img {
+  width: 25px;
+}
+
+/* header end */
+
+/* first section */
+
+.section_first {
+  display: flex;
+  width: 100%;
+}
+.mySlides {
+  height: 490px;
+  width: 100%;
+  object-fit: cover;
+}
+/* fade */
+
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 8s;
+  animation-name: fade;
+  animation-duration: 8s;
+}
+
+@-webkit-keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fade {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* first section end */
+
+/* second section */
+.section_second {
+  margin: 30px 30px 30px 30px;
+}
+.about_us {
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-left: 10px;
+}
+.about_us_rect {
+  content: "";
+  border: 1px solid rgb(190, 190, 190);
+  background-color: rgb(190, 190, 190);
+  width: 100%;
+  height: 1px;
+  margin-bottom: 10px;
+}
+.section_second_content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+iframe {
+  width: 50%;
+  height: 400px;
+}
+.au {
+  width: 50%;
+  margin-left: 30px;
+  height: 400px;
+  overflow: scroll;
+}
+.au h4 {
+  font-size: 16px;
+}
+.au p {
+  font-size: 14px;
+}
+
+/* footer */
+
+footer {
+  height: 100%;
+  width: 100%;
+  background-color: #1a192b;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-top: 25px;
+}
+
+.footer_upSide {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px 0 15px;
+}
+.up_left {
+  display: flex;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 30px;
+}
+.up_left :nth-child(4) li:not(:nth-child(1)) {
+  color: rgba(255, 255, 255, 0.8);
+}
+.up_left ul {
+  margin-right: 35px;
+  display: flex;
+  flex-direction: column;
+}
+.up_left ul li:not(:nth-child(1)) {
+  display: flex;
+  flex-direction: column;
+}
+.up_left ul:nth-child(2) {
+  margin-left: 20px;
+}
+.up_left :nth-child(2) li:not(:nth-child(1)) {
+  margin-left: 15px;
+}
+.up_left ul li:nth-child(1) {
+  font-size: 16px;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+.up_right {
+  font-size: 13px;
+  text-align: right;
+  line-height: 30px;
+  color: rgba(255, 255, 255, 0.8);
+}
+.up_right ul li:nth-child(1) {
+  font-size: 16px;
+  color: #ffffff;
+  margin-bottom: 17px;
+}
+.footer_downSide {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_downSide p {
+  padding-top: 15px;
+  padding-left: 40px;
+  font-size: 13px;
+}
+.footer_downSide div {
+  margin-top: 15px;
+  margin-right: 40px;
+}
+.footer_downSide div img {
+  margin-left: 15px;
+}
+.footer_downSide::before {
+  content: "";
+  width: 100%;
+  position: absolute;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}

@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logistic Companies</title>
+    <link type="text/css" rel="stylesheet" href="css/resetCSS.css" />
+    <link type="text/css" rel="stylesheet" href="css/logistic-companies.css" />
+    <link rel="stylesheet" href="css/logistic-companies-responsive.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  </head>
+  <body>
+    <header class="border-bottom">
+      <div id="logo">
+        <h1 style="font-weight: bold; font-size: 30px;">LOGO</h1>
+    </div>
+      <ul id="headerNavigation" class="header_navigation">
+          <li onclick="closeMenu()" class="close"><img src="images/close.svg" alt="close"></li>
+          <li id="home">Home</li>
+          <li id="buildings">Buildings</li>
+          <li id="developers">Developers</li>
+          <li id="promotions">Promotions</li>
+          <li id="about">About</li>
+          <li class="menu_phone">Phone: 032 2 19 60 13</li>
+          <li class="menu_location">Tbilisi, Iosebidze Str. 49</li>
+      </ul>
+      <div class="favicon">
+          <img class="favimg" src="images/favorites.svg" alt="favicon">
+          <div class="favorites_count">
+          </div>
+      </div>
+      <div onclick="openMenu()" class="burger_menu">
+          <img src="images/menu.svg" alt="menu">
+      </div>
+  </header>
+    <section>
+      <h3 class="header-title">Logistic Companies<span>(20)</span></h3>
+      <ul>
+        <li>
+          <div class="item-container">
+            <div  class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/terasa/6_7912cf6c-f08b-4751-a606-c657abc3c250.jpg"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Terasa Group</h4>
+                <p>Tbilisi, Zhgenti # 7a</p>
+                <div onclick="allProjects()" href="">All Projects (7)</div>
+              </div>
+            </div>
+          </div>
+          <div id="projectsContainer" class="projects-container">
+            <div onclick="productPage()" class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/terasa/projects/17_edeb7042-5277-4e74-9077-abbbbc380110.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Terasa resort Bakuriani</h5>
+                <p>Bakuriani, Mtis street 4</p>
+              </div>
+            </div>
+            <div onclick="productPage()" class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/terasa/projects/1_150b8eb8-eb6a-4a98-810b-4f081bf3f457.png"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Terasa green tower</h5>
+                <p>Tbilisi, Gladani, Qerchi Str.28</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li id="allProjectsList" class="all_projects_list">
+          <div  onclick="productPage()" class="all_projects_item">
+            <div class="all_projects_itemUp">
+              <img class="all_projects_img" src="./images/logistic-companies/terasa/projects/1_150b8eb8-eb6a-4a98-810b-4f081bf3f457.png" alt=""/>
+              <h3>Terase green tower</h3>
+              <h4>Tbilisi, Gladani, Qerchi Str.28</h4>
+            </div>
+            <h5> From - 1700₾</h5>
+            <p>2022, September</p>
+          </div>
+          <div  onclick="productPage()" class="all_projects_item">
+            <div class="all_projects_itemUp">
+              <img class="all_projects_img" src="./images/logistic-companies/terasa/bakuriani/1.jpg" alt=""/>
+              <h3>Terase resort bakuriani</h3>
+              <h4>Bakuriani, Street Mta 4</h4>
+            </div>
+            <h5>The price is specified</h5>
+            <p>2022, September</p>
+          </div>
+          <div  onclick="productPage()" class="all_projects_item">
+            <div class="all_projects_itemUp">
+              <img class="all_projects_img" src="./images/logistic-companies/terasa/homeside/1.png" alt=""/>
+              <h3>Homeside terase</h3>
+              <h4>Batumi, Haidar Abashidze 64</h4>
+            </div>
+            <h5>2730 -3810 ₾</h5>
+            <p>2022, March</p>
+          </div>
+          <div  onclick="productPage()" class="all_projects_item">
+            <div class="all_projects_itemUp">
+              <img class="all_projects_img" src="./images/logistic-companies/terasa/batumi/1.png" alt=""/>
+              <h3>Terase Batumi</h3>
+              <h4>Batumi, Angisi Lane 3, #10</h4>
+            </div>
+            <h5>2730 - 3810 ₾</h5>
+            <p style="color:green">Completed</p>
+          </div>
+          <div  onclick="productPage()" class="all_projects_item">
+            <div class="all_projects_itemUp">
+              <img class="all_projects_img" src="./images/logistic-companies/terasa/ipodromi/1.png" alt=""/>
+              <h3>Terase Ipodromi</h3>
+              <h4>Tbilisi, Kartozia Str. 12</h4>
+            </div>
+            <h5>3580 - 4180 ₾</h5>
+            <p style="color: green;">Completed</p>
+          </div>
+          <div onclick="productPage()" class="all_projects_item">
+            <div class="all_projects_itemUp">
+              <img class="all_projects_img" src="./images/logistic-companies/terasa/ortachala/1.png" alt=""/>
+              <h3>Terase Ortachala</h3>
+              <h4>Tbilisi, Arthour Laiste Str. 4</h4>
+            </div>
+            <h5> From - 1940 ₾</h5>
+            <p  style="color: green;">Completed</p>
+          </div>
+          <div onclick="productPage()" class="all_projects_item">
+            <div class="all_projects_itemUp">
+              <img class="all_projects_img" src="./images/logistic-companies/terasa/saburtalo/1.jpg" alt=""/>
+              <h3>Terase Saburtalo</h3>
+              <h4>Tbilisi, Sandro Euli Str. 7</h4>
+            </div>
+            <h5> From - 2790 ₾</h5>
+            <p>2022, December</p>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/arqi/10_fea4a40c-d14d-4c9f-858f-1753eadb3fb4.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Arch</h4>
+                <p>Tbilisi, Kipshidze # 15</p>
+                <a href="">All Projects (7)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div onclick="productPage()" class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/arqi/projects/arqi kokhta/1_23f1c299-db1a-4ade-a67c-7d75ca0fbe35.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Arch Kokhta</h5>
+                <p>Bakuriani, 9 April Street</p>
+              </div>
+            </div>
+            <div onclick="productPage()" class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/arqi/projects/arqi central park/3_71aa651f-cf8e-445c-a265-ae3d908b94e4.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Archi central park</h5>
+                <p>Tbilisi, vake, tamarashvili st. N13</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/aim/6_d88c53b2-4e97-4198-ae39-2c1392b12f13.jpg"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>AIM - Aim Building</h4>
+                <p>Tbilisi, Takaishvili # 37</p>
+                <a href="">All Projects (6)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/aim/projects/gabriel salos st N122 A block/2_86f4fbd2-04f5-4b4c-b8e8-da4686641306.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Block N122 A of Gabriel Salos</h5>
+                <p>Tbilisi, Beri Gabriel Salosi Ave. 122</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/aim/projects/temqa, chargali st. n79b/13_10bae978-8139-4266-9a2a-95c8c8ea40f0.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Temka, Chargli Street. N79 b</h5>
+                <p>Tbilisi, Chargli st. (Temqa) 79 b</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/domusi/6_bbe1f0c4-d52a-4064-a458-1b0ab4f3fae2.jpg"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Domus</h4>
+                <p>Tbilisi, Kavsadze # 3</p>
+                <a href="">All Projects (5)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/domusi/projects/domusi bagebi 2/4_68f72270-b7ec-461b-8064-cc7f3beb3fcc.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Domus Bagebi 2</h5>
+                <p>Tbilisi, Tskneti Highway 2</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/domusi/projects/domusi ipodromi 2/0_2f4b5597-629d-472e-b2e5-d31d59b11aae.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Domus Hippodrome 2</h5>
+                <p>Tbilisi, Tamarashvili st. (Saburtalo) 13</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/arqturi/19_69d9223f-035c-40eb-879f-a36477c12a9e.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Arqturi</h4>
+                <p>Bakuriani, Agmashenebeli # 21a</p>
+                <a href="">All Projects (4)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/arqturi/projects/heisteki/12_2b45cf5b-4ab1-40eb-b5c6-fea8c6c194a8.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Heiski</h5>
+                <p>Bakuriani, d.agmashenebeli st. N98b</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/arqturi/projects/multifunctional complex a, b block/0_5a2574dc-d27f-4556-9fb3-3ddd305babe1.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Multifunctional complex A, B block</h5>
+                <p>Tbilisi, saburtalo, politkovskaia st. N34</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/anagi/anagi.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Anagi Development</h4>
+                <p>Tbilisi, Merab Kostava #37/39</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/anagi/projects/parkhomevake/1.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Park Home Vake</h5>
+                <p>Tbilisi, Vake, Sajaia Str. 25</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/anagi/projects/villaambasador/1.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Villa Ambasador</h5>
+                <p>Telavi, Aghmashenebeli Str. 7</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/axis/axis.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Axis</h4>
+                <p>Tbilisi, Kazbegi Ave. #24</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/axis/projects/axisdidube/1.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Axis Didube</h5>
+                <p>Tbilisi, Didube, Keidia Str. 10</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/axis/projects/axischavchavadze/1.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Chavchavadze 49</h5>
+                <p>Tbilisi, Vake, I.Chavchavadze Ave. 49</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/krtsanisi-villa-residence/krtsanisivillaresidence.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Krtsanisi Villa Residence</h4>
+                <p>Tbilisi, Krtsanisi #14</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/krtsanisi-villa-residence/projects/villa-residence-apartments/1.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Villa Residense Apartmens</h5>
+                <p>Tbilisi, Ortachala, Krtsanisi Str. 28</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/krtsanisi-villa-residence/projects/krtsanisi-villa-residence/1.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Krtsanisi Villa Residence</h5>
+                <p>Tbilisi, Ortachala, Krtsanisi Str. 28</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/x2-development/4_0fecec50-2f44-417e-8898-0ed397885345.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>X2 Development</h4>
+                <p>Tbilisi, Lvovi #66</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/x2-development/projects/shartava fusion/3_c616f774-9c3d-43b4-91f4-65fc6aab9346.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>SHARTAVA FUSION</h5>
+                <p>Tbilisi, Saburtalo, Shartava Str. 29</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/x2-development/projects/shartava pool house/12_4c1edaac-0e33-4640-9859-54d481751f95.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>SHARTAVA POOL HOUSE</h5>
+                <p>Tbilisi, Saburtalo, Shartava Str. 31/33</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/seu-development/18_fead1d0d-8b3b-4554-a10b-c66bb0f2a4de.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>SEU DEVELOPMENT</h4>
+                <p>Tbilisi, Politkovskaia #32</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/seu-development/projects/seu-varketili/19_286ef5dd-cd11-45ab-a6a6-4af67c5a9656.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Seu Varketili</h5>
+                <p>Tbilisi, Varketili, Kupradze Str. 18</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/seu-development/projects/jiqias7/2_40ae5abd-e091-4fe2-b71b-1f1543f4703c.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Jikia N7</h5>
+                <p>Tbilisi, Saburtalo, Jikia Str. 7</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/vake-hills/18_961c077a-f947-4ff7-9a07-fd6f97472fc3.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Vake Hills</h4>
+                <p>Tbilisi, Chavchavadze st. N82</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/vake-hills/projects/vake-hills-B-Block/5_e9543834-896c-4147-9373-20860970cc31.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>vake hills B block</h5>
+                <p>Tbilisi, vake, I.chavchavadze st. N82</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/vake-hills/projects/vake-hills-A-Block/10_f1f41722-6a86-4e43-aea9-4eb9fa6ab208.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>vake hills A block</h5>
+                <p>Tbilisi, vake, I.chavchavadze st. N82</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/monolit/6_eb0f2eed-1978-45ad-abf2-f5b372082450.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Monolit Group</h4>
+                <p>Tbilisi, Bejan kalandadze st. N1</p>
+                <a href="">All Projects (3)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/monolit/projects/monolit city/1_6a7bff4d-71d3-41b5-892e-3935b0ab70dd.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Monolit city</h5>
+                <p>Tbilisi, saburtalo, a.kalandadze st. N1</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/monolit/projects/monolit bagebi/2_d23d2b3a-3071-42ca-b426-9740fea08558.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Monolit Bagebi</h5>
+                <p>Tbilisi, bagebi, wkneti highway, 43</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/gumbati/5_935598ff-4aaf-4d8e-9ea1-a08d8d057157.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Gumbati Group</h4>
+                <p>Batumi, sherif khimshiashvili st. N1</p>
+                <a href="">All Projects (3)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/gumbati/projects/gumbati kheivanshi/14_0485bf81-f4d7-42c6-8169-1a4f296cbe1f.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Gumbati Kheivanshi</h5>
+                <p>Batumi, cross-road of Gmirta Kheivani and Bagrationi st.</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/gumbati/projects/gumbati gorgiladze/9_cfd7d694-6b49-4252-91d6-4caa021357a5.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Gumbati Gorgiladze</h5>
+                <p>Batumi, Gorgiladze st. 67/69</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/dona-group/19_95aa5149-ad10-43b7-bae6-e85e00e6d68e.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Dona Group</h4>
+                <p>Tbilisi, gorgasali st. N40</p>
+                <a href="">All Projects (3)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/dona-group/projects/dona palace saburtalo/2_d407d55a-d309-4eae-8f4e-a2d1580b13f3.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Dona palace Saburtalo in Tbilisi</h5>
+                <p>Tbilisi, Saburtalo, politkovskaia st. N5</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/dona-group/projects/dona palace sanzona/3_9be9431e-ea60-4cda-99ec-18f5d3ed810e.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Dona palace Sanzona</h5>
+                <p>Tbilisi, Sanzona, Guramishvili st. N70/2</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/dux development/9_cca5dd7e-e2d7-4899-98a3-ec7c88679bd4.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Dux Development</h4>
+                <p>Tbilisi, Faliashvili N23</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/dux development/projects/landmark bakuriani/18_2d0d1934-c367-4051-8d03-0e1e2de4bb8f.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Landmark Bakuriani</h5>
+                <p>Bakuriani, Agmashenebeli st. N15</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/dux development/projects/saxli winamdzgvrishvilze/12_7b74cc10-93f4-45d9-9394-5525ed170c53.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>house Tsinamdzgvrishvili</h5>
+                <p>Tbilisi, Chugureti, tsinamdzgvrishvili st. N133a</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/idea development/4_1e785455-0286-49c3-ac51-5a40e405d97b.jpg"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Idea Development</h4>
+                <p>Tbilisi, Zhgenti #7a</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/idea development/projects/tiflis meore faza/5_375b36da-7ad3-4b3f-8336-b3d728d7eb2e.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>TIFLISI The Second Phase</h5>
+                <p>Tbilisi, Lisi lake</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/idea development/projects/tiflis/4_716d1aac-7ab3-40ab-b14e-8b887fbb0e67.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>TIFLISI</h5>
+                <p>Tbilisi, Lisi Lake</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/dux development/9_cca5dd7e-e2d7-4899-98a3-ec7c88679bd4.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>Dux Development</h4>
+                <p>Tbilisi, Paliashvili #23</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/dux development/projects/landmark bakuriani/18_2d0d1934-c367-4051-8d03-0e1e2de4bb8f.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Landmark Bakuriani</h5>
+                <p>Bakuriani, Aghmashenebeli #15</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/dux development/projects/saxli winamdzgvrishvilze/12_7b74cc10-93f4-45d9-9394-5525ed170c53.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>House on Tsinamdzgvrishvili</h5>
+                <p>Tbilisi, Chughureti, Tsinamdzgvrishvili</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/konstruqsusi/7_d894d7d0-ce3b-4426-9d12-c9ed225ddbbb.jpg"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>construxus</h4>
+                <p>Tbilisi, Zhvania #43</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/konstruqsusi/projects/nestan darejanis 6/0_af2536a8-a8f7-4cf7-8b3d-a72a740d6cb9.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Nestan darejan #6</h5>
+                <p>Tbilisi, didi dighomi</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/konstruqsusi/projects/house on zvania/8_2871a6c2-6b27-4900-bcdc-da7a72a958ef.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>House on Zhvania #43</h5>
+                <p>Tbilisi, Vake, Zhvania #43</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/qr development/16_52d5380f-f588-403a-8211-abdd55a95358.jpg"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>QR DEVELOPMENTI</h4>
+                <p>Tbilisi, kapaneli #6</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/qr development/projects/zemo plato/6_f4ec98d3-a0ed-4fd7-9964-024905ad7faa.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Zemo Plato #33</h5>
+                <p>Tbilisi, Varketili, II M/D - zemo plato, 33</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/qr development/projects/didi digomi/11_74d9bf38-4cb5-405e-ab42-9589070f8a90.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>QR Didi dighomi</h5>
+                <p>Tbilisi, Didi dighomi, davari st. N48</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="item-container">
+            <div class="item-image-description">
+              <img
+                class="item-image"
+                src="./images/logistic-companies/didube gardeni/5_3f7dc961-c44e-478c-b3d2-f0f7699a70f6.png"
+                alt=""
+              />
+              <div class="item-description">
+                <h4>DIDUBE GARDEN</h4>
+                <p>Tbilisi, Vani #4</p>
+                <a href="">All Projects (2)</a>
+              </div>
+            </div>
+          </div>
+          <div class="projects-container">
+            <div class="project-item first-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/didube gardeni/projects/a bloki/7_e04df4ef-e92c-434a-b432-4305bbe35b72.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Didube garden block A</h5>
+                <p>Tbilisi, Didube, vani #4</p>
+              </div>
+            </div>
+            <div class="project-item">
+              <img
+                class="project-image"
+                src="./images/logistic-companies/didube gardeni/projects/b bloki/1_bea9edc6-e18d-40c6-a79c-20e937d8b7ed.jpg"
+                alt=""
+              />
+              <div class="project-title">
+                <h5>Didube gardeni block B</h5>
+                <p>Tbilisi, Didube, vani #4</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </section>
+    <script src="js/logistic-companies-script.js"></script>
+  </body>
+</html>
